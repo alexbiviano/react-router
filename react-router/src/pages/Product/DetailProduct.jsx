@@ -12,7 +12,7 @@ const DetailProduct = () => {
     const [product, setProduct] = useState({})
 
     const getSingleProduct = () => {
-        axios.get(`https://fakestoreapi.com/products/${id}`).then((resp) => {
+        axios.get(`https://fakestoreapi.com/products/${id}`).then((resp) => { 
             setProduct(resp.data)
         });
     }
